@@ -1,51 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="opis sadržaja stranice" />
+    <meta name="author" content="Aleksej" />
+    <title>Aleksej</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: "Rubik", sans-serif;
+        background-color: #fdf2e9;
+        max-width: 120rem;
+      }
+      main {
+        padding: 1.3em;
+      }
+      .align-center {
+        text-align: center;
+      }
+      .uppercase-letters {
+        text-transform: uppercase;
+      }
+      #header {
+        padding: 20px 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      #header h1 {
+        color: #cf711f;
+      }
+      .list-of-homeworks {
+        text-align: center;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 1.5em;
+      }
+      .list-of-homeworks li {
+        margin-bottom: 1em;
+      }
+      .list-of-homeworks li:last-child {
+        margin-bottom: 0;
+      }
+      .list-of-homeworks li a:link,
+      .list-of-homeworks li a:visited {
+        text-decoration: none;
+        color: #333;
+        transition: all 0.3s;
+      }
+      .list-of-homeworks li a:hover,
+      .list-of-homeworks li a:active {
+        color: #cf711f;
+      }
+      nav {
+        font-size: 25px;
+        font-weight: 500;
+        display: flex;
+        gap: 1em;
+      }
+      nav a:link,
+      nav a:visited {
+        text-decoration: none;
+        color: #333;
+        transition: all 0.3s;
+      }
+      nav a:hover,
+      nav a:active {
+        color: #cf711f;
+      }
+    </style>
   </head>
   <body>
-    <!-- tablice -->
-    <table border="1">
-      <tr>
-        <td>prva celija prvi red</td>
-        <td>druga celija prvi red</td>
-        <td>treca celija prvi red</td>
-        <td>cetvrta celija prvi red</td>
-      </tr>
-      <tr>
-        <td>prva celija drugi red</td>
-        <td>druga celija drugi red</td>
-        <td>treca celija drugi red</td>
-        <td>cetvrta celija drugi red</td>
-      </tr>
-    </table>
-    <hr />
-    <!-- Linkovi -->
-    <a href="https://www.vecernji.hr/" target="_blank">vecernji.hr</a>
-    <a href="./index.html" target="_blank">index.html</a>
-    <a href="#auto">link unutar nase str.</a>
-    <hr />
-    <!-- unordered list -->
-    <ul>
-      <li>stavka1</li>
-      <li>stavka2</li>
-    </ul>
-    <hr />
-    <!-- ordered list  -->
-    <ol>
-      <li>Kruh</li>
-      <li>Mlijeko</li>
-    </ol>
-    <!-- data lista -->
-    <hr />
-    <dl>
-      <dt>Auto</dt>
-      <dd name="auto">Mercedes</dd>
-      <dt>Algebrin polaznik</dt>
-      <dd>Aleksej</dd>
-    </dl>
+    <header id="header">
+      <h1 class="align-center uppercase-letters">Moja prva web stranica</h1>
+      <nav>
+        <a href="https://www.vecernji.hr/" target="_blank">Večernji</a>
+        <a href="https://www.index.hr/" target="_blank">Index</a>
+        <a href="https://www.rezultati.com/" target="_blank">Rezultati</a>
+      </nav>
+    </header>
+    <main>
+      <ul class="list-of-homeworks">
+        <li><a href="./zadaca-1.html" target="_blank">1. Zadaća</a></li>
+        <li><a href="#">2. Zadaća</a></li>
+        <li><a href="#">3. Zadaća</a></li>
+        <li><a href="#">4. Zadaća</a></li>
+      </ul>
+    </main>
   </body>
 </html>
