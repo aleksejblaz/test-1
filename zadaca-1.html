@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="opis sadržaja stranice" />
+    <meta name="author" content="Aleksej" />
+    <title>1. zadaća</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: "Rubik", sans-serif;
+        background-color: #fdf2e9;
+      }
+      .align-center {
+        text-align: center;
+      }
+      .uppercase-letters {
+        text-transform: uppercase;
+      }
+      #header {
+        padding: 20px 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      #header h1 {
+        color: #cf711f;
+      }
+      nav {
+        font-size: 25px;
+        font-weight: 500;
+        display: flex;
+        gap: 1em;
+      }
+      nav a:link,
+      nav a:visited {
+        text-decoration: none;
+        color: #333;
+        transition: all 0.3s;
+      }
+      nav a:hover,
+      nav a:active {
+        color: #cf711f;
+      }
+      main {
+        margin-top: 3em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10rem;
+        font-size: 1.8em;
+        max-width: 120rem;
+        margin: 0 auto;
+        padding: 4rem 8rem;
+      }
+      .photo-section img {
+        width: 800px;
+        height: auto;
+      }
+
+      tr th {
+        font-size: 30px;
+        font-weight: 500;
+        padding: 10px;
+      }
+      table {
+        text-align: center;
+      }
+      tr td {
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="header">
+      <h1 class="align-center uppercase-letters">Moja prva web stranica</h1>
+      <nav>
+        <a href="./index.html" target="_blank">Početna</a>
+        <a href="https://www.index.hr/" target="_blank">Index</a>
+        <a href="https://www.rezultati.com/" target="_blank">Rezultati</a>
+      </nav>
+    </header>
+    <main>
+      <div class="text-section">
+        <h3>TOP 5 najboljih strijelaca Lige prvaka</h3>
+        <br />
+        <table border="1">
+          <tr>
+            <th>Rank</th>
+            <th>Ime i prezime</th>
+            <th>Br.golova</th>
+          </tr>
+          <tr>
+            <td>1.</td>
+            <td>Cristiano Ronaldo</td>
+            <td>132</td>
+          </tr>
+          <tr>
+            <td>2.</td>
+            <td>Lionel Messi</td>
+            <td>118</td>
+          </tr>
+          <tr>
+            <td>3.</td>
+            <td>Robert Lewandolski</td>
+            <td>71</td>
+          </tr>
+          <tr>
+            <td>4.</td>
+            <td>Raul</td>
+            <td>71</td>
+          </tr>
+          <tr>
+            <td>5.</td>
+            <td>Karim Benzema</td>
+            <td>67</td>
+          </tr>
+        </table>
+      </div>
+      <div class="photo-section">
+        <img
+          src="https://www.nacional.hr/wp-content/uploads/2020/08/liga-prvaka.png"
+        />
+      </div>
+    </main>
+  </body>
+</html>

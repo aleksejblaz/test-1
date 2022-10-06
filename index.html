@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="opis sadržaja stranice" />
+    <meta name="author" content="Aleksej" />
+    <title>Aleksej</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: "Rubik", sans-serif;
+        background-color: #fdf2e9;
+        max-width: 120rem;
+      }
+      main {
+        padding: 1.3em;
+      }
+      .align-center {
+        text-align: center;
+      }
+      .uppercase-letters {
+        text-transform: uppercase;
+      }
+      #header {
+        padding: 20px 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      #header h1 {
+        color: #cf711f;
+      }
+      .list-of-homeworks {
+        text-align: center;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 1.5em;
+      }
+      .list-of-homeworks li {
+        margin-bottom: 1em;
+      }
+      .list-of-homeworks li:last-child {
+        margin-bottom: 0;
+      }
+      .list-of-homeworks li a:link,
+      .list-of-homeworks li a:visited {
+        text-decoration: none;
+        color: #333;
+        transition: all 0.3s;
+      }
+      .list-of-homeworks li a:hover,
+      .list-of-homeworks li a:active {
+        color: #cf711f;
+      }
+      nav {
+        font-size: 25px;
+        font-weight: 500;
+        display: flex;
+        gap: 1em;
+      }
+      nav a:link,
+      nav a:visited {
+        text-decoration: none;
+        color: #333;
+        transition: all 0.3s;
+      }
+      nav a:hover,
+      nav a:active {
+        color: #cf711f;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="header">
+      <h1 class="align-center uppercase-letters">Moja prva web stranica</h1>
+      <nav>
+        <a href="https://www.vecernji.hr/" target="_blank">Večernji</a>
+        <a href="https://www.index.hr/" target="_blank">Index</a>
+        <a href="https://www.rezultati.com/" target="_blank">Rezultati</a>
+      </nav>
+    </header>
+    <main>
+      <ul class="list-of-homeworks">
+        <li><a href="./zadaca-1.html" target="_blank">1. Zadaća</a></li>
+        <li><a href="#">2. Zadaća</a></li>
+        <li><a href="#">3. Zadaća</a></li>
+        <li><a href="#">4. Zadaća</a></li>
+      </ul>
+    </main>
+  </body>
+</html>
