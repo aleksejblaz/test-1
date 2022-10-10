@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2. Zadaća</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      }
+      img {
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+      }
+      .container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 100px;
+        height: auto;
+        width: 80vw;
+      }
+      .form {
+        width: auto;
+        height: 500px;
+        padding: 40px;
+      }
+      .form-1 {
+        background-color: white;
+        width: 30vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        gap: 25px;
+        border-radius: 10px;
+      }
+      .form-2 {
+        background-color: #efd5cc;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 25px;
+        border-radius: 10px;
+      }
+      .form-2 input {
+        border: none;
+      }
+      input {
+        border: none;
+        border-bottom: 1px solid black;
+        font-size: 20px;
+      }
+      label {
+        font-size: 20px;
+      }
+      .heading-1 {
+        font-size: 30px;
+        color: white;
+      }
+      .heading-2 {
+        text-align: center;
+        font-size: 25px;
+        margin-bottom: 20px;
+      }
+      .spol {
+        display: flex;
+        gap: 20px;
+      }
+      .button {
+        margin-left: auto;
+      }
+      button {
+        padding: 10px;
+        font-size: 20px;
+        border: 3px solid #92788c;
+        border-radius: 10px;
+        background-color: #92788c;
+        color: white;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+      button:hover,
+      button:active {
+        border: 3px solid white;
+        transition: 0.3s;
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      src="https://images.pexels.com/photos/45987/pexels-photo-45987.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    />
+    <!-- container START -->
+    <div class="container">
+      <!-- heading-1 START -->
+      <div class="heading-1">
+        <h1>
+          UZ REGISTRACIJU<br />
+          DOBIJAŠ 25% POPUSTA!
+        </h1>
+      </div>
+      <!-- heading-1 END -->
+      <!-- form-1 START -->
+      <form action="#" method="post" class="form-1 form">
+        <div class="heading-2">
+          <h2>Vaši podaci</h2>
+        </div>
+        <input
+          type="text"
+          name="ime-prezime"
+          placeholder="Ime i Prezime *"
+          required
+        />
+        <br />
+        <input type="email" name="email" placeholder="vaš@email.com *" />
+        <br />
+        <input
+          type="tel"
+          name="phone-number"
+          pattern="[0-9]{3}-[0.9]{3}-[0-9]"
+          placeholder="099 123 4567"
+        />
+        <br />
+        <div class="spol">
+          <div>
+            <input type="radio" id="musko" name="spol" value="Muško" />
+            <label for="musko">Muško</label>
+          </div>
+          <div>
+            <input type="radio" id="zensko" name="spol" value="Žensko" />
+            <label for="zensko">Žensko</label>
+          </div>
+        </div>
+      </form>
+      <!-- form-1 END -->
+      <!-- form-2 START -->
+      <form action="#" method="post" class="form-2 form">
+        <div class="heading-2">
+          <h2>Podaci o proizvodu</h2>
+        </div>
+        <div>
+          <input type="checkbox" id="web-dizajn" value="web-dizajn" />
+          <label for="web-dizajn">Web dizajn</label>
+          <br />
+          <input type="checkbox" id="web-development" value="web-development" />
+          <label for="web-development">Web development</label>
+          <br />
+          <input type="checkbox" id="graficki-dizajn" value="graficki-dizajn" />
+          <label for="graficki-dizajn">Grafički dizajn</label>
+        </div>
+        <div>
+          <label for="file">Skica/slika ideje</label>
+          <input type="file" id="file" name="file" value="file" />
+        </div>
+        <div>
+          <label for="datum">Rok za izradu:</label>
+          <input type="date" id="datum" name="datum" />
+        </div>
+        <!-- button START -->
+        <div class="button">
+          <button type="submit">POŠALJI</button>
+        </div>
+        <!-- button END -->
+      </form>
+      <!-- form-2 END -->
+    </div>
+    <!-- container END -->
+  </body>
+</html>
