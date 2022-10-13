@@ -48,10 +48,16 @@
       <!--select-->
       <label for="cars">Choose a car:</label>
       <select id="cars" name="cars">
-        <option value="volvo">Volvo</option>
-        <option value="saab">Saab</option>
-        <option value="fiat">Fiat</option>
-        <option value="audi">Audi</option>
+        <optgroup label="Swedish cars">
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+          <option value="fiat">Fiat</option>
+          <option value="audi">Audi</option>
+        </optgroup>
+        <optgroup label="German cars">
+          <option value="audi">Audi</option>
+          <option value="passat">Passat</option>
+        </optgroup>
       </select>
       <input type="submit" value="Submit" />
     </form>
